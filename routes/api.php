@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/categories', 'PhotosController@categories');
+Route::post('/photo', 'PhotosController@uploadPhoto');
